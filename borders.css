@@ -28,15 +28,15 @@
 }
 
 .btn-div{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
 }
 
-#shoppingcart-icon{
+.shoppingcart-icon {
     height: 100px;
     width: 100px;
 }
@@ -45,6 +45,3 @@ p{
     text-align: center;
 }
 
-span{
-    align
-}

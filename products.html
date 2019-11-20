@@ -19,13 +19,10 @@
                     <a class="navbar-brand text-center" href="#">The Cool Store!</a>
                 </div>
                 <div>
-                    <img src="/Images/shoppingcarticon.png" id="shoppingcart-icon" alt="Shopping Cart Icon">
+                    <input class="shoppingcart-icon" type="image"  src="./Images/shoppingcarticon.png"/>
                 </div>
                 <div class="row col-2 center">
                     <a href="" class="">My Account</a>
-                </div>
-                <div>
-                    <button id="cart-info"  ="submit" class="col-10 text-center">My Cart</input>
                 </div>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,47 +41,109 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 offset-md-1">
-                <img src="/Images/shirt1.jpg" alt="shirt 1">
+                <img src="./images/shirt1.jpg" alt="shirt 1">
                 <h1>Our model-1 of shirts</h1>
                 <p>Price</p>
+                <div>
+                <button class="decrement-button">-</button>
+                <form>
+                    <input type="text" id="number" value="0"/>
+                    <input type="button" onclick="changeQty()" value="Increment Value" />
+                </form>
+                <button class="increment-button">+</button>
+                </div>
             </div>
             <div class="col-md-4 offset-md-2">
-                <img src="/Images/shirt2.jpg" alt="shirt 2">
+                <img src="./images/shirt2.jpg" alt="shirt 2">
                 <h1>Our model-2 of shirts</h1>
                 <p>Price</p>
+                <div>
+                <button>-</button>
+                <form>
+                    <input type="text" id="number" value="0"/>
+                    <input type="button"  onclick="changeQty()" value="Increment Value" />
+                </form>
+                <button>+</button>
+                </div>
             </div>    
             <div class="col-md-4 offset-md-1">
-                <img src="/Images/shirt1.jpg" alt="shirt 3">
+                <img src="./images/shirt3.jpg" alt="shirt 3">
                 <h1>Our model-3 of shirts</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                        </form>
+                    <button>+</button>
+                </div>
             </div>
             <div class="col-md-4 offset-md-2">
-                <img src="/Images/shirt2.jpg" alt="shirt 4">
+                <img src="./images/shirt4.jpg" alt="shirt 4">
                 <h1>Our model-4 of pants</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                    </form>
+                    <button>+</button>
+                </div>
             </div>    
             <div class="col-md-4 offset-md-1">
-                <img src="/Images/pant1.jpg" alt="Pant 1">
+                <img src="./images/pant1.jpg" alt="pant 1">
                 <h1>Our model-1 of pants</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                        </form>
+                    <button>+</button>
+                </div>
             </div>
             <div class="col-md-4 offset-md-2">
-                <img src="/Images/pant2.jpg" alt="Pant 2">
+                <img src="./images/pant2.jpg" alt="pant 2">
                 <h1>Our model-2 of pants</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                        </form>
+                    <button>+</button>
+                </div>
             </div>    
             <div class="col-md-4 offset-md-1 center">
-                <img src="/Images/pant3.jpg" alt="Pant 1">
+                <img src="./images/pant3.jpg" alt="pant 3">
                 <h1>Our model-3 of pants</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                        </form>
+                    <button>+</button>
+                </div>
             </div>
             <div class="col-md-4 offset-md-2 center">
-                <img src="/Images/pant4.jpg" alt="Pant 2">
+                <img src="./images/pant4.jpg" alt="pant 4">
                 <h1>Our model-4 of pants</h1>
                 <p>Price</p>
+                <div>
+                    <button>-</button>
+                    <form>
+                            <input type="text" id="number" value="0"/>
+                            <input type="button" onclick="changeQty()" value="Increment Value" />
+                        </form>
+                    <button>+</button>
+                </div>
             </div>    
-
-    
     </div>
 </section>
 
@@ -95,6 +154,6 @@
         <p>Hello</p>
     </div>  
 </footer>
-
+<script src="app.js"></script>
 </body>
 </html>
