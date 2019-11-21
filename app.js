@@ -1,72 +1,77 @@
  let product = [
     {
-        "name": shirt1,
-        "stock": 10,
-        "price": 5,
-        "qty": "qty",
-        "total": "total"
+        "name": "shirt1",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
     {
-        "name": shirt2,
-        "stock": 15,
-        "price": 10,
-        "qty": qty,
-        "total": total
+        "name": "shirt2",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
     {
-        "name": shirt3,
-        "stock": 20,
-        "price": 15,
-        "qty": qty,
-        "total": total
+        "name": "shirt3",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
     {
-        "name": shirt4,
-        "stock": 5,
-        "price": 10,
-        "qty": qty,
-        "total": total
+        "name": "shirt4",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
     {
-        "name": pant1,
-        "stock": 10,
-        "price": 5,
-        "qty": qty,
-        "total": total
+        "name": "pant1",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
     {
-        "name": pant2,
-        "stock": 15,
-        "price": 10,
-        "qty": qty,
-        "total": total
+        "name": "pant2",
+        "stock": [],
+        "price": [,,],
+        "qty": [],
+        "total": []
     },
-    {
-        "name": pant3,
-        "stock": 20,
-        "price": 15,
-        "qty": qty,
-        "total": total
-    },
-    {
-        "name": pant4,
-        "stock": 20,
-        "price": 15,
-        "qty": qty,
-        "total": total
-    }
+
+
 ];
 
 
+function Product(name, stock, price, qty, total) {
+    this.name = name;
+    this.stock = stock;
+    this.price = price;
+    this.qty = qty;
+    this.total = total;
+}
+
+// function sumInputs() {
+//     var arr = document.getElementsByName('qty');
+//     var tot=0;
+//     for(var i=0;i<arr.length;i++){
+//         if(parseInt(arr[i].value))
+//             tot += parseInt(arr[i].value);
+//     }
+//     document.getElementById('total').value = tot;
+// }
 
 function saveName(){
     let username = document.getElementById("username").value;
     localStorage.setItem("username", username);
 }
 
-function saveItem(){
-    let itemqty = document.getElementById("number").value;
-    localStorage.setItem("number", itemqty);
+function saveItems(){
+    let itemqty = document.getElementById("number1").value;
+    localStorage.setItem("Fist-Input", itemqty);
 }
 
 

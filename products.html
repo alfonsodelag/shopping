@@ -37,6 +37,11 @@
 </header>
 
 <main>
+        <form>
+            <div>
+                <input type="submit" id="number" onclick="saveItems()">
+            </div>
+        </form>
     <section>
     <div class="container-fluid">
         <div class="row">
@@ -45,7 +50,7 @@
                 <h1>Model-1</h1>
                 <p>30€</p>
                     <div>
-                        <select>
+                        <select class="product-size">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
                             <option value="large">Large</option>
@@ -53,7 +58,7 @@
                     </div>
                 <div>
                     <form>
-                        <input type="number" name="quantity" min="1" max="6">
+                        <input type="number" name="qty" id="number1" name="quantity" min="1" max="6">
                     </form>
                 </div>
             </div>
@@ -62,7 +67,7 @@
                 <h1>Model-2</h1>
                 <p>20€</p>
                     <div>
-                        <select>
+                        <select class="product-size">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
                             <option value="large">Large</option>
@@ -70,7 +75,7 @@
                     </div>
                 <div>
                     <form>
-                        <input type="number" name="quantity" min="1" max="8">
+                        <input type="number" name="qty" id="qty2" min="1" max="8">
                     </form>
                 </div>
             </div>
@@ -82,7 +87,7 @@
                 <p>10€</p>
                 <div>
                         <div>
-                            <select>
+                            <select class="product-size">
                                 <option value="small">Small</option>
                                 <option value="medium">Medium</option>
                                 <option value="large">Large</option>
@@ -100,7 +105,7 @@
                 <h1>Model-4</h1>
                 <p>20€</p>
                 <div>
-                    <select>
+                    <select class="product-size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
@@ -120,7 +125,7 @@
                     <h1>Model-1P</h1>
                     <p>30€</p>
                     <div>
-                        <select>
+                        <select class="product-size">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
                             <option value="large">Large</option>
@@ -136,7 +141,7 @@
                 <h1>Model-2P</h1>
                 <p>30€</p>
                 <div>
-                    <select>
+                    <select class="product-size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
