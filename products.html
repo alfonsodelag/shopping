@@ -16,10 +16,12 @@
                 <div class="row col-4">
                 </div>
                 <div class="row col-4">
-                    <a class="navbar-brand text-center" href="#">The Cool Store!</a>
+                    <a class="navbar-brand text-center" href="index.html">The Cool Store!</a>
                 </div>
                 <div>
+                    <form action="cart.html">
                     <input class="shoppingcart-icon" type="image"  src="./Images/shoppingcarticon.png"/>
+                    </form>
                 </div>
                 <div class="row col-2 center">
                     <a href="" class="">My Account</a>
@@ -43,6 +45,9 @@
             </div>
         </form>
     <section>
+
+        Total : <input type="submit" name="total" id="total"/>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 offset-md-1">
@@ -58,10 +63,12 @@
                     </div>
                 <div>
                     <form>
-                        <input type="number" name="qty" id="number1" name="quantity" min="1" max="6">
+                        <input type="number" name="qty" id="number1" min="0" max="6">
+                        <input type="submit" onclick="saveInput()" class="product1" value="Save to cart">
                     </form>
                 </div>
             </div>
+
             <div class="col-md-4 offset-md-2">
                 <img src="./images/shirt2.jpg" alt="shirt 2">
                 <h1>Model-2</h1>
@@ -75,11 +82,13 @@
                     </div>
                 <div>
                     <form>
-                        <input type="number" name="qty" id="qty2" min="1" max="8">
+                        <input type="number" name="qty" id="qty2" min="0" max="8">
+                        <input type="submit" onclick="saveinput()" class="product2" value="Save to cart">
                     </form>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-4 offset-md-1">
                 <img src="./images/shirt3.jpg" alt="shirt 3">
@@ -95,11 +104,13 @@
                         </div>
                     <div> 
                         <form>
-                            <input type="number" name="quantity" min="1" max="10">
+                            <input type="number" name="qty" min="0" max="10">
+                            <input type="submit" onclick="saveinput()" class="product3" value="Save to cart">
                         </form>
                     </div>  
                 </div>
             </div>
+
             <div class="col-md-4 offset-md-2">
                 <img src="./images/shirt4.jpg" alt="shirt 4">
                 <h1>Model-4</h1>
@@ -113,11 +124,13 @@
                 </div>
                 <div>
                     <form>
-                        <input type="number" name="quantity" min="1" max="7">
+                        <input type="number" name="quantity" min="0" max="7">
+                        <input type="submit" onclick="saveinput()" class="product4" value="Save to cart">
                     </form>
                 </div>
             </div>
         </div>
+
         <div class=row>
             <div class="col-md-4 offset-md-1">
                 <div>
@@ -132,10 +145,12 @@
                         </select>
                     </div>
                         <form>
-                            <input type="number" name="quantity" min="1" max="6">
+                            <input type="number" name="quantity" min="0" max="6">
+                            <input type="submit" class="product5" value="Save to cart">
                         </form>
                     </div>
                 </div>
+
             <div class="col-md-4 offset-md-2">
                 <img src="./images/pant2.jpg" alt="pant 2">
                 <h1>Model-2P</h1>
@@ -148,7 +163,8 @@
                     </select>
                 </div>
                     <form>
-                        <input type="number" name="quantity" min="1" max="5">
+                        <input type="number" name="quantity" min="0" max="5">
+                        <input type="submit" class="product6" value="Save to cart">
                     </form>
                 </div>
         </div>
@@ -157,10 +173,10 @@
 </main>
 
 <footer>  
-    <div class="footer">
-        <p>Hello</p>
-    </div>  
+
 </footer>
+
 <script src="app.js"></script>
+
 </body>
 </html>

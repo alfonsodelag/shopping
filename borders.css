@@ -56,3 +56,8 @@ select {
 input {
     text-align: center;
 }
+
+footer {
+    height: 100px;
+    background-color: blue;
+}

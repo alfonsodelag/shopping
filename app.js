@@ -1,6 +1,7 @@
  let product = [
     {
         "name": "shirt1",
+        "id": 1, 
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -8,6 +9,7 @@
     },
     {
         "name": "shirt2",
+        "id": 2,
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -15,6 +17,7 @@
     },
     {
         "name": "shirt3",
+        "id": 3,
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -22,6 +25,7 @@
     },
     {
         "name": "shirt4",
+        "id": 4,
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -29,6 +33,7 @@
     },
     {
         "name": "pant1",
+        "id": 5,
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -36,6 +41,7 @@
     },
     {
         "name": "pant2",
+        "id": 6,
         "stock": [],
         "price": [,,],
         "qty": [],
@@ -45,14 +51,29 @@
 
 ];
 
+var i=0; 
 
-function Product(name, stock, price, qty, total) {
-    this.name = name;
-    this.stock = stock;
-    this.price = price;
-    this.qty = qty;
-    this.total = total;
+var nextButton = document.getElementById( "nextButton" );
+function mostrar(i){
+
+document.getElementById("name").innerHTML = product[i].name;
+document.getElementById("id").innerHTML = questions[i].option[0].choice1;
+document.getElementById("stock").innerHTML = questions[i].option[0].choice2;
+document.getElementById("price").innerHTML = questions[i].option[0].choice2;
+document.getElementById("qty").innerHTML = questions[i].option[0].choice3;
+document.getElementById("total").innerHTML = questions[i].option[0].choice4;
+
 }
+
+
+
+// function Product(name, stock, price, qty, total) {
+//     this.name = name;
+//     this.stock = stock;
+//     this.price = price;
+//     this.qty = qty;
+//     this.total = total;
+// }
 
 // function sumInputs() {
 //     var arr = document.getElementsByName('qty');
@@ -69,12 +90,28 @@ function saveName(){
     localStorage.setItem("username", username);
 }
 
+// function sumInputs() {
+//     var arr = document.getElementsByName('qty');
+//     var tot=0;
+//     for(var i=0;i<arr.length;i++) {
+//         if(arr[i].value)
+//             tot += arr[i].value;
+//     }
+//     console.log(sumInputs);
+//     document.getElementById('total').value = tot;
+// }
+
+
+function saveInput() {
+    let saveInput = document.getElementById("number1").value;
+    localStorage.setItem("qty", saveInput);
+    console.log(saveInput, 'saveInput');
+}
+
 function saveItems(){
     let itemqty = document.getElementById("number1").value;
     localStorage.setItem("Fist-Input", itemqty);
 }
-
-
 
 function saveProductName() {
   let itemChosen = document.getElementsByClassName("number").value;
