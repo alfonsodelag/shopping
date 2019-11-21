@@ -1,0 +1,15 @@
+function increaseProduct() {
+    let options = [];
+    options = document.getElementsByClassName("number");
+
+    for (let i = 0; i < options.length; i++) {
+        if (options[i].value >= 0) {
+            options[i].value++
+        }
+    } 
+    if (options) {
+        
+    }
+
+
+};
