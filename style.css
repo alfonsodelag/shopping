@@ -1,6 +1,11 @@
 * {
-    border: 1px solid black;
+    border: 1px solid transparent;
     text-align: center;
+}
+
+#thanks-message {
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 #box1 {
@@ -8,22 +13,30 @@
     height: 700px;
     padding-top: 15%;
 }
-#box2 {
-    background-color: rgb(172, 172, 70);
-    padding-top: 10px;
-}
-#box3 {
-    background-color: rgb(92, 92, 18);
-}
-
-#box4 {
-    background-color: rgb(71, 71, 3);
-}
 
 #box2, #box3, #box4 {
     display: none;
     height: 700px;
+}
 
+#box2 {
+    background-color: yellow;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#box3 {
+    background-color: yellow;
+    padding-top: 10%;
+    padding-bottom: 20%;
+
+}
+
+#box4 {
+    background-color:  yellow;
+}
+
+header {
+    height: 50px;
 }
 
 header, footer {
@@ -33,4 +46,14 @@ header, footer {
 .qty-choice {
     height: 10px;
     width: 100px;
+}
+
+.size-btn {
+    height: 25px;
+    width: 100px;
+}
+
+#shopping-icon {
+    height: 50px;
+    width: 50px;
 }
