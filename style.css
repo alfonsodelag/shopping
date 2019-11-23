@@ -1,0 +1,36 @@
+* {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#box1 {
+    background-color: yellow;
+    height: 700px;
+    padding-top: 15%;
+}
+#box2 {
+    background-color: rgb(172, 172, 70);
+    padding-top: 10px;
+}
+#box3 {
+    background-color: rgb(92, 92, 18);
+}
+
+#box4 {
+    background-color: rgb(71, 71, 3);
+}
+
+#box2, #box3, #box4 {
+    display: none;
+    height: 700px;
+
+}
+
+header, footer {
+    background-color: blue;
+}
+
+.qty-choice {
+    height: 10px;
+    width: 100px;
+}
