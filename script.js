@@ -18,7 +18,6 @@ var Products =
     }
 ]
 
-
 localStorage.setItem("Products", JSON.stringify(Products));
 
 
