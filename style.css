@@ -36,11 +36,11 @@
 }
 
 header {
-    height: 50px;
+    height: 80px;
 }
 
 header, footer {
-    background-color: blue;
+    background-color: skyblue;
 }
 
 .qty-choice {
@@ -56,4 +56,8 @@ header, footer {
 #shopping-icon {
     height: 50px;
     width: 50px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

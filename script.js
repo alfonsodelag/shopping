@@ -1,3 +1,4 @@
+// Our Json for storing data about our products.
 let Products =
 [
     {
@@ -18,10 +19,14 @@ let Products =
     }
 ]
 
+//Saving the 
+
 localStorage.setItem("Products", JSON.stringify(Products));
-console.log(Products);
+
 // console.log(localStorage.getItem("Products"));
 
+
+//Function used to move from Box1 to Box2 in the HTML
 function startBox() {
     document.getElementById("box1").style.display = "none";
     document.getElementById("box2").style.display = "inline-block";
@@ -46,7 +51,6 @@ function changeQty(event)
         for (let i = 0; i < object.length; i++) {
             if (idevent == "plus-"+i && object[i].qty[object[i].position] != object[i].stocks[object[i].position]) {
                 object[i].qty[object[i].position]=object[i].qty[object[i].position]+1;
-                console.log("hola")
             }else if(idevent=="minus-"+i && object[i].qty[object[i].position] != 0){
                 object[i].qty[object[i].position]=object[i].qty[object[i].position]-1;
             } 
@@ -77,28 +81,54 @@ function changeQty(event)
         let object = JSON.parse(localStorage.getItem("Products"));
         document.getElementById("box2").style.display = "none";
         document.getElementById("box3").style.display = "inline-block";
-        var productos="";
-        var cantidad="";
+        var products="";
+        var quantity="";
         var total="";
-        var totalc=0;
+        var grandtotal=0;
         for (let i = 0; i < object.length; i++) {
             for (let j = 0; j < object[i].qty.length; j++) {
                 if (object[i].qty[j] > 0) {
-                    productos=productos+object[i].name+" "+object[i].size[j]+"<br>";
-                    cantidad=cantidad+object[i].qty[j]+"<br>";
+                    products=products+object[i].name+" "+object[i].size[j]+"<br>";
+                    quantity=quantity+object[i].qty[j]+"<br>";
                     total=total+object[i].qty[j]*object[i].price[j]+"<br>";
-                    totalc=totalc+object[i].qty[j]*object[i].price[j];
+                    grandtotal=grandtotal+object[i].qty[j]*object[i].price[j];
                 }
             }   
         }
 
-        document.getElementsByClassName("datos")[0].innerHTML=productos;
-        document.getElementsByClassName("datos")[1].innerHTML=cantidad;
+        document.getElementsByClassName("datos")[0].innerHTML=products;
+        document.getElementsByClassName("datos")[1].innerHTML=quantity;
         document.getElementsByClassName("datos")[2].innerHTML=total;
-        document.getElementsByClassName("datos")[3].innerHTML=totalc;
+        document.getElementsByClassName("datos")[3].innerHTML=grandtotal+"€";
     }
 
-function 
+    function changeCurrency()
+    {
+        let object = JSON.parse(localStorage.getItem("Products"));
+        document.getElementById("box2").style.display = "none";
+        document.getElementById("box3").style.display = "inline-block";
+        var products="";
+        var quantity="";
+        var total="";
+        var grandtotal=0;
+        for (let i = 0; i < object.length; i++) {
+            for (let j = 0; j < object[i].qty.length; j++) {
+                if (object[i].qty[j] > 0) {
+                    products=products+object[i].name+" "+object[i].size[j]+"<br>";
+                    quantity=quantity+object[i].qty[j]+"<br>";
+                    total=total+object[i].qty[j]*object[i].price[j]+"<br>";
+                    grandtotal=grandtotal+object[i].qty[j]*object[i].price[j];
+                }
+            }   
+        }
+
+        document.getElementsByClassName("datos")[0].innerHTML=products;
+        document.getElementsByClassName("datos")[1].innerHTML=quantity;
+        document.getElementsByClassName("datos")[2].innerHTML=total;
+        document.getElementsByClassName("datos")[3].innerHTML=grandtotal*1.2+"$";
+    }
+
+
 
 function returnToPage()
 {
@@ -106,6 +136,7 @@ function returnToPage()
     document.getElementById("box2").style.display = "inline-block";
 }
 
+//This function is used to show you the "Thank you for your purchase" page.
 function finish()
 {
     document.getElementById("box3").style.display = "none";

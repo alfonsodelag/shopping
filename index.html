@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Shopping Cart</title>
@@ -25,10 +26,9 @@
             <h1>Welcome!</h1>
         </div>
     </div>
-
     <div class="row ">
         <div class="col-md-2 offset-md-5">
-        <button onclick="startBox()" class="submit">Start!</button>
+                <button onclick="startBox()">Start!</button>
         </div>
     </div>
 </div>
@@ -36,111 +36,109 @@
 <!-- Box 2 -->
 <div class="container-fluid" id="box2" >
 <div class="row" onclick="changeQty(event)" >
-        <div class="col-md-4 offset-md-1">
-            <img src="Images/shirt1.jpg" alt="Image1">
-            <h2></h2>
-            <p></p>
-            <input id="size-0" onclick="changeSize(event)" class="size-btn" type="button" value="">
-            <div class="row">
-                    <div class="col-md-4">
-                        <button id="minus-0">-</button>
-                    </div>
-                    <div class="col-md-4">
-                        <p class="qty-choice"></p>
-                    </div>
-                    <div class="col-md-4">
-                        <button id="plus-0">+</button>
-                    </div>
+    <div class="col-md-4 offset-md-1">
+        <img src="Images/shirt1.jpg" alt="Image1">
+        <h2></h2>
+        <p></p>
+        <input id="size-0" onclick="changeSize(event)" class="size-btn" type="button" value="">
+        <div class="row">
+            <div class="col-md-4 col-sm">
+                <button id="minus-0">-</button>
+            </div>
+            <div class="col-md-4 col-sm">
+                <p class="qty-choice col-sm"></p>
+            </div>
+            <div class="col-md-4 col-sm">
+                <button id="plus-0">+</button>
             </div>
         </div>
+    </div>
     <div class="col-md-4 offset-md-2">
         <img src="Images/pant1.jpg" alt="Image2">
         <h2></h2>
         <p></p>
         <input id="size-1" onclick="changeSize(event)" class="size-btn" type="button" value="">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm">
                 <button id="minus-1">-</button>
             </div>
-            <div class="col-md-4">
-                <p class="qty-choice"></p>
+            <div class="col-md-4 col-sm">
+                <p class="qty-choice col-sm"></p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm">
                 <button id="plus-1" >+</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="col-md-2 offset-md-5">
-        <button  onclick="saveToCart()" class="submit">Save to Cart</button>
+    <div class="row">
+        <div class="col-md-2 offset-md-5">
+            <button  onclick="saveToCart()" class="submit">Save to Cart</button>
+        </div>
     </div>
-</div>
 </div>
 
 
 <!-- Box 3 -->
 <div class="container-fluid" id="box3">
-        <div class="row">
-            <div class="offset-md-8 col-md-4">
-                <input type="submit" value="change currency">
-            </div>
+    <div class="row">
+        <div class="offset-md-8 col-md-4 col-sm">
+            <input onclick="changeCurrency()" type="submit" value="change currency">
         </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h1>Your Cart</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 offset-md-2">
-                <p>Your Product</p>
-                <p class="datos"></p>
-            </div>
-            <div class="col-md-2 offset-md-1">
-                <p>Quantity</p>
-                <p class="datos"></p>
-            </div>
-            <div class="col-md-2 offset-md-2">
-                <p>Total Price</p>
-                <p class="datos"></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offset-md-4">
-                <p class="datos"></p>
-            </div>
-        </div>
-        <div class="row">
-                <div class="col-md-4 offset-md-4">
-                        <input onclick="returnToPage()" type="button" value="Return">
-                        <input  onclick="finish()" type="button" value="Finish">
-                </div>
-            </div>
     </div>
+    <div class="row">
+        <div class="col-md-6 col-sm offset-md-3">
+            <h1>Your Cart</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm offset-md-2">
+            <p><strong>Your Product</strong></p>
+            <p class="datos"></p>
+        </div>
+        <div class="col-md-2 col-sm offset-md-1">
+            <p><strong>Quantity</strong></p>
+            <p class="datos"></p>
+        </div>
+        <div class="col-md-2 col-sm offset-md-2">
+            <p><strong>Total Price</strong></p>
+            <p class="datos"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm offset-md-4">
+            <p class="datos"></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm offset-md-4">
+            <input onclick="returnToPage()" type="button" value="Return">
+            <input  onclick="finish()" type="button" value="Finish">
+        </div>
+    </div>
+</div>
 
 <!-- Box 4 -->
 
 <div class="container-fluid" id="box4">
     <div class="row">
-        <div class="col-md-6 offset-md-3">
-        <h1 id="thanks-message">Thanks for your purchase!</h1>
+        <div class="col-md-6 col-sm offset-md-3">
+            <h1 id="thanks-message">Thanks for your purchase!</h1>
         </div>
     </div>
 </div>
-
 
 </main>
 
 <footer>
     <div class="row">
-        <div class="offset-2 col-md-4">
+        <div class="offset-2 col-md-2 col-sm">
             <ul>        
                 <li><a class="text-white" href="#">Our Staff</a></li>
                 <li><a class="text-white" href="#">Contact Us</a></li>
             </ul>
         </div>
-        <div class="col-md-4">
+        <div class="offset-2 col-md-2 col-sm">
             <ul>
                 <li><a class="text-white" href="#">Location</a></li>
                 <li><a class="text-white" href="#">More info</a></li>
