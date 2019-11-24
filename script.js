@@ -19,11 +19,8 @@ let Products =
     }
 ]
 
-//Saving the 
 
 localStorage.setItem("Products", JSON.stringify(Products));
-
-// console.log(localStorage.getItem("Products"));
 
 
 //Function used to move from Box1 to Box2 in the HTML
@@ -37,7 +34,7 @@ function placeData () {
     let object = JSON.parse(localStorage.getItem("Products"));
     for (let i = 0; i < object.length; i++) {
         document.getElementsByTagName("h2")[i].innerHTML=object[i].name+" "+object[i].size[object[i].position];
-        document.getElementsByTagName("p")[i*2].innerHTML=object[i].price[object[i].position];
+        document.getElementsByTagName("p")[i*2].innerHTML=object[i].price[object[i].position]+"€";
         document.getElementsByClassName("size-btn")[i].value=object[i].size[object[i].position];
         document.getElementsByClassName("qty-choice")[i].innerHTML=object[i].qty[object[i].position];  
     }
